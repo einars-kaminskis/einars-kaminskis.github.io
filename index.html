@@ -7,6 +7,7 @@
   <title>Tīmekļa dizaina pamati - gala darbs</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="index.css">
+  <script src="https://kit.fontawesome.com/63a1e1bed7.js" crossorigin="anonymous"></script>
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -29,7 +30,25 @@
   <script src="main.js"></script>
 </head>
 
-<body class="bg-my-green-sec dark:bg-my-dark-sec">
+<body class="h-[100vh] relative z-2 bg-my-green-sec dark:bg-my-dark-sec">
+  <div class="overflow-hidden fixed z-5 h-[100%] w-[100%]">
+    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] -right-[13px] -top-[13px] 2xl:-right-[20px] 2xl:-top-[20px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
+    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] right-[666px] top-[86px] 2xl:right-[1000px] 2xl:top-[130px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
+    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] right-[200px] top-[60px] 2xl:right-[300px] 2xl:top-[90px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
+    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] right-[13px] top-[100px] 2xl:right-[20px] 2xl:top-[150px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
+    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] right-[93px] top-[233px] 2xl:right-[140px] 2xl:top-[350px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
+    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] right-[373px] top-[400px] 2xl:right-[800px] 2xl:top-[600px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
+    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] right-[360px] top-[533px] 2xl:right-[750px] 2xl:top-[800px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
+    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] right-[493px] bottom-[166px] 2xl:right-[950px] 2xl:top-[850px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
+    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] right-[226px] top-[466px] 2xl:right-[550px] 2xl:top-[700px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
+    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] left-[133px] bottom-[366px] 2xl:left-[200px] 2xl:bottom-[550px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
+    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] left-[200px] bottom-[193px] 2xl:left-[300px] 2xl:bottom-[290px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
+    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] left-[533px] bottom-[40px] 2xl:left-[800px] 2xl:bottom-[250px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
+    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] left-[413px] -bottom-[20px] 2xl:left-[650px] 2xl:bottom-[90px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
+    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] left-[80px] bottom-[246px] 2xl:left-[120px] 2xl:bottom-[370px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
+    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] left-[166px] bottom-[80px] 2xl:left-[250px] 2xl:bottom-[120px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
+    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] -left-[6px] bottom-[3px] 2xl:-left-[10px] 2xl:bottom-[5px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
+  </div>
   <!-- <h1 id="colorChange" class="text-3xl font-bold text-red-700">
     Hello world!
   </h1>
@@ -39,8 +58,8 @@
     This is my DIV element.
   </div>
   <a href="next.page.html">Page 2</a> -->
-  <nav class="flex items-center justify-between flex-wrap bg-my-green-prim dark:bg-my-dark-prim p-6">
-    <div class="absolute left-5 top-5 z-20">
+  <nav class="relative z-20 flex items-center justify-between flex-wrap bg-my-green-prim dark:bg-my-dark-prim p-6">
+    <div class="absolute left-5 top-5 z-21">
       <object class="fill-current w-[200px] hero-image" data="lightmode_icon.svg" type="image/svg+xml"></object>
     </div>
     <div class="mr-10 ml-auto block lg:hidden">
@@ -54,12 +73,12 @@
     </div>
     <div id="menu" class="lg:ml-[20%] hidden w-full flex-grow lg:block lg:flex lg:items-center lg:w-auto">
       <div class="text-sm lg:flex-grow">
-        <a href="#responsive-header"
-          class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-auto ml-4 lg:mr-4">
+        <a href="#"
+          class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-my-brown dark:hover:text-my-green-prim mr-auto ml-4 lg:mr-4">
           ABOUT ME
         </a>
-        <a href="#responsive-header"
-          class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-auto ml-4 lg:mr-0">
+        <a href="#"
+          class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-my-brown dark:hover:text-my-green-prim mr-auto ml-4 lg:mr-0">
           CONTACTS
         </a>
       </div>
@@ -69,31 +88,31 @@
       </button>
     </div>
   </nav>
-  <div class="relative z-10 h-96 w-auto bg-placeholder bg-cover text-center">
-    <h1 class="pt-36 text-9xl text-white">Big title here</h1>
+  <div class="relative z-10 h-[40vh] w-auto bg-placeholder bg-cover text-center">
+    <h1 class="pt-32 2xl:pt-36 text-7xl 2xl:text-9xl text-white">Baudi skatus no sabiedriskā</h1>
   </div>
-  <div class="mx-auto md:h-96 w-[88%] relative z-20 -mt-10 bg-my-green-prim dark:bg-my-dark-prim">
-    <img class="mx-auto md:mx-0 p-5 md:p-0 md:absolute z-30 md:-top-10 md:right-10 w-[30%]" src="ImagePlaceholder.png"
+  <div class="flex flex-nowrap rounded-tl-[250px] rounded-br-[250px] mx-auto w-[88%] relative z-20 -mt-10 2xl:-mt-32 bg-my-green-prim dark:bg-my-dark-prim">
+    <p class="text-xl 2xl:text-3xl text-white ps-20 pe-10 py-32 w-full w-[65%]">Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Cras ut rutrum massa. Cras finibus viverra ultricies. Nulla vel hendrerit nibh. Phasellus ut elit sit amet
+      tellus tincidunt blandit vitae id elit. Sed congue porttitor purus et facilisis. Suspendisse eu risus turpis.
+      Etiam maximus a est eu dapibus. Nulla et auctor massa. Curabitur vel semper quam, sit amet consectetur magna.</p>
+    <img class="rounded-br-[250px] p-10 w-[40%] h-[40%]" src="ImagePlaceholder.png"
       alt="ImagePlaceholder" />
-    <p class="text-xl text-white p-5 w-full md:w-[50%] xl:w-[70%]">Lorem ipsum dolor sit amet, consectetur adipiscing
+  </div>
+
+  <div class="rounded-tr-[150px] rounded-bl-[150px] flex flex-nowrap ml-[6%] md:h-70 w-[60%] relative z-20 mt-36 bg-my-green-prim dark:bg-my-dark-prim">
+    <img class="rounded-bl-[150px] p-5 w-[30%]" src="ImagePlaceholder.png"
+      alt="ImagePlaceholder" />
+    <p class="text-sm 2xl:text-xl text-white p-5 py-16 w-[65%]">Lorem ipsum dolor sit amet, consectetur adipiscing
       elit. Cras ut rutrum massa. Cras finibus viverra ultricies. Nulla vel hendrerit nibh. Phasellus ut elit sit amet
       tellus tincidunt blandit vitae id elit. Sed congue porttitor purus et facilisis. Suspendisse eu risus turpis.
       Etiam maximus a est eu dapibus. Nulla et auctor massa. Curabitur vel semper quam, sit amet consectetur magna.</p>
   </div>
 
-  <div class="flex flex-nowrap ml-20 md:h-70 w-[60%] relative z-20 mt-36 bg-my-green-prim dark:bg-my-dark-prim">
-    <img class="p-5 w-[30%]" src="ImagePlaceholder.png"
+  <div class="rounded-tr-[150px] rounded-bl-[150px] flex flex-nowrap ml-[6%] md:h-70 w-[60%] relative z-20 mt-16 bg-my-green-prim dark:bg-my-dark-prim">
+    <img class="rounded-bl-[150px] p-5 w-[30%]" src="ImagePlaceholder.png"
       alt="ImagePlaceholder" />
-    <p class="text-sm text-white p-5 py-8 w-[65%]">Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit. Cras ut rutrum massa. Cras finibus viverra ultricies. Nulla vel hendrerit nibh. Phasellus ut elit sit amet
-      tellus tincidunt blandit vitae id elit. Sed congue porttitor purus et facilisis. Suspendisse eu risus turpis.
-      Etiam maximus a est eu dapibus. Nulla et auctor massa. Curabitur vel semper quam, sit amet consectetur magna.</p>
-  </div>
-
-  <div class="flex flex-nowrap ml-20 md:h-70 w-[60%] relative z-20 mt-16 bg-my-green-prim dark:bg-my-dark-prim">
-    <img class="p-5 w-[30%]" src="ImagePlaceholder.png"
-      alt="ImagePlaceholder" />
-    <p class="text-sm text-white p-5 py-8 w-[65%]">Lorem ipsum dolor sit amet, consectetur adipiscing
+    <p class="text-sm 2xl:text-xl text-white p-5 py-16 w-[65%]">Lorem ipsum dolor sit amet, consectetur adipiscing
       elit. Cras ut rutrum massa. Cras finibus viverra ultricies. Nulla vel hendrerit nibh. Phasellus ut elit sit amet
       tellus tincidunt blandit vitae id elit. Sed congue porttitor purus et facilisis. Suspendisse eu risus turpis.
       Etiam maximus a est eu dapibus. Nulla et auctor massa. Curabitur vel semper quam, sit amet consectetur magna.</p>
@@ -105,21 +124,21 @@
         <div class="mb-6 md:mb-0">
           <object class="fill-current w-[200px] hero-image" data="lightmode_icon.svg" type="image/svg+xml"></object>
         </div>
-        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+        <div class="grid grid-cols-2 gap-8 sm:gap-6">
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
-            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <h2 class="mb-6 text-md font-semibold uppercase text-white">Resources</h2>
+            <ul class="text-white font-medium">
               <li class="mb-4">
-                <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
+                <a href="#" class="hover:underline">Contacts</a>
               </li>
               <li>
-                <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                <a href="#" class="hover:underline">About me</a>
               </li>
             </ul>
           </div>
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
-            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <h2 class="mb-6 text-md font-semibold uppercase text-white">Legal</h2>
+            <ul class="text-white font-medium">
               <li class="mb-4">
                 <a href="#" class="hover:underline">Privacy Policy</a>
               </li>
@@ -130,43 +149,24 @@
           </div>
         </div>
       </div>
-      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <hr class="my-6 border-gray-400 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-xs text-white sm:text-center">2024 Einārs Kaminskis, ek21136. All Rights Reserved.</span>
+        <span class="text-xs text-gray-500 sm:text-center">2024 Einārs Kaminskis, ek21136. All Rights Reserved.</span>
         <div class="flex mt-4 sm:justify-center sm:mt-0">
-          <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-              viewBox="0 0 8 19">
-              <path fill-rule="evenodd"
-                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
-                clip-rule="evenodd" />
-            </svg>
+          <a href="#" class="text-white hover:text-my-brown dark:hover:text-my-green-prim">
+            <i class="fa-brands fa-facebook"></i>
             <span class="sr-only">Facebook page</span>
           </a>
-          <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-              viewBox="0 0 21 16">
-              <path
-                d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
-            </svg>
+          <a href="#" class="text-white hover:text-my-brown dark:hover:text-my-green-prim ms-5">
+            <i class="fa-brands fa-discord"></i>
             <span class="sr-only">Discord community</span>
           </a>
-          <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-              viewBox="0 0 20 17">
-              <path fill-rule="evenodd"
-                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
-                clip-rule="evenodd" />
-            </svg>
+          <a href="#" class="text-white hover:text-my-brown dark:hover:text-my-green-prim ms-5">
+            <i class="fa-brands fa-x-twitter"></i>
             <span class="sr-only">Twitter page</span>
           </a>
-          <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-              viewBox="0 0 20 20">
-              <path fill-rule="evenodd"
-                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
-                clip-rule="evenodd" />
-            </svg>
+          <a href="#" class="text-white hover:text-my-brown dark:hover:text-my-green-prim ms-5">
+            <i class="fa-brands fa-github"></i>
             <span class="sr-only">GitHub account</span>
           </a>
         </div>
