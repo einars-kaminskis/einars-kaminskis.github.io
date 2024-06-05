@@ -7,21 +7,25 @@
   <title>Tīmekļa dizaina pamati - gala darbs</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="index.css">
-  <script src="https://kit.fontawesome.com/63a1e1bed7.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/63a1e1bed7.js" crossorigin="anonymous">
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
   <script>
     tailwind.config = {
       darkMode: 'class',
       theme: {
         extend: {
-          backgroundImage: {
-            'placeholder': "url('ImagePlaceholder.png')",
+          fontFamily: {
+            'play': ["Play"],
           },
           colors: {
-            "my-green-prim": '#708772',
-            "my-green-sec": '#58735A',
-            "my-brown": '#C6886E',
-            "my-dark-prim": '#131313',
-            "my-dark-sec": '#191A1E'
+            "my-primary": '#56A988',
+            "my-secondary": '#DDEEDF',
+            "my-accent": '#56A95E',
+            "my-dark-prim": '#08110E',
+            "my-dark-sec": '#11221B'
           }
         }
       }
@@ -30,142 +34,234 @@
   <script src="main.js"></script>
 </head>
 
-<body class="h-[100vh] relative z-2 bg-my-green-sec dark:bg-my-dark-sec">
-  <div class="overflow-hidden fixed z-5 h-[100%] w-[100%]">
-    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] -right-[13px] -top-[13px] 2xl:-right-[20px] 2xl:-top-[20px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
-    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] right-[666px] top-[86px] 2xl:right-[1000px] 2xl:top-[130px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
-    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] right-[200px] top-[60px] 2xl:right-[300px] 2xl:top-[90px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
-    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] right-[13px] top-[100px] 2xl:right-[20px] 2xl:top-[150px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
-    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] right-[93px] top-[233px] 2xl:right-[140px] 2xl:top-[350px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
-    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] right-[373px] top-[400px] 2xl:right-[800px] 2xl:top-[600px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
-    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] right-[360px] top-[533px] 2xl:right-[750px] 2xl:top-[800px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
-    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] right-[493px] bottom-[166px] 2xl:right-[950px] 2xl:top-[850px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
-    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] right-[226px] top-[466px] 2xl:right-[550px] 2xl:top-[700px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
-    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] left-[133px] bottom-[366px] 2xl:left-[200px] 2xl:bottom-[550px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
-    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] left-[200px] bottom-[193px] 2xl:left-[300px] 2xl:bottom-[290px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
-    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] left-[533px] bottom-[40px] 2xl:left-[800px] 2xl:bottom-[250px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
-    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] left-[413px] -bottom-[20px] 2xl:left-[650px] 2xl:bottom-[90px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
-    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] left-[80px] bottom-[246px] 2xl:left-[120px] 2xl:bottom-[370px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
-    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] left-[166px] bottom-[80px] 2xl:left-[250px] 2xl:bottom-[120px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
-    <object class="background-leaf absolute z-6 w-[110px] 2xl:w-[160px] -left-[6px] bottom-[3px] 2xl:-left-[10px] 2xl:bottom-[5px]" data="background_leaf_brown.svg" type="image/svg+xml"></object>
-  </div>
-  <!-- <h1 id="colorChange" class="text-3xl font-bold text-red-700">
-    Hello world!
-  </h1>
-  <button onclick="changeColor()">Click to change color</button>
-  <button onclick="myFunction()">Click Me</button>
-  <div id="myDIV">
-    This is my DIV element.
-  </div>
-  <a href="next.page.html">Page 2</a> -->
-  <nav class="relative z-20 flex items-center justify-between flex-wrap bg-my-green-prim dark:bg-my-dark-prim p-6">
-    <div class="absolute left-5 top-5 z-21">
-      <object class="fill-current w-[200px] hero-image" data="lightmode_icon.svg" type="image/svg+xml"></object>
-    </div>
-    <div class="mr-10 ml-auto block lg:hidden">
-      <button class="items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white"
-        onClick="showMenu()">
-        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <title>Menu</title>
+<body class="font-jockey h-[100vh] relative z-2 text-white
+             bg-my-secondary dark:bg-my-dark-sec">
+  <img class="overflow-hidden fixed z-5 w-[100vw] h-[100vh] object-cover
+              object-right-top" src="figma/leaf_background.png" alt="Lapu fons" id="leaf-background" />
+
+  <nav class="absolute z-20 flex flex-wrap sm:flex-nowrap w-full
+              bg-my-primary dark:bg-my-dark-prim
+              p-2 lg:p-4">
+    <a href="index.html" class="flex flex-nowrap items-center
+                      hover:brightness-90 dark:hover:text-my-accent">
+      <img class="hero-image
+                  h-10 sm:h-14 md:h-16 lg:h-20" src="logos/light_logo2.svg" alt="Wiew-ride logo"
+        title="Wiew-ride logo" />
+      <h1 class="italic 
+                 text-xl sm:text-2xl md:text-3xl lg:text-4xl
+                 ms-2 md:ms-3 lg:ms-4">Wiew-ride</h1>
+    </a>
+    <div class="ms-auto me-5 self-center
+                block sm:hidden">
+      <button class="items-center px-3 py-2 border rounded 
+                     hover:brightness-90
+                     dark:hover:text-my-accent
+                     border-white dark:hover:border-my-accent" onClick="showMenu()">
+        <svg class="fill-current
+                    h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Izvēlne</title>
           <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
         </svg>
       </button>
     </div>
-    <div id="menu" class="lg:ml-[20%] hidden w-full flex-grow lg:block lg:flex lg:items-center lg:w-auto">
-      <div class="text-sm lg:flex-grow">
-        <a href="#"
-          class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-my-brown dark:hover:text-my-green-prim mr-auto ml-4 lg:mr-4">
-          ABOUT ME
-        </a>
-        <a href="#"
-          class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-my-brown dark:hover:text-my-green-prim mr-auto ml-4 lg:mr-0">
-          CONTACTS
-        </a>
-      </div>
-      <button class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-auto ml-4 lg:mr-0"
-        onClick="toggleDarkMode()">
-        <img id="light-dark-mode-icon" class="w-20" src="light_mode_button.png" alt="Light / Dark mode icon" />
+    <div id="menu" class="items-center justify-end
+                          text-sm lg:text-base
+                          hidden sm:block
+                          w-full sm:w-auto
+                          sm:flex sm:flex-grow
+                          bg-my-primary dark:bg-my-dark-prim">
+      <a href="#" class="uppercase block sm:inline-block
+                           mt-4 sm:mt-0
+                           me-4 lg:me-8
+                           hover:hover:brightness-90 dark:hover:text-my-accent">
+        Par mani
+      </a>
+      <a href="#" class="uppercase block sm:inline-block
+                           mt-4 sm:mt-0
+                           me-4 lg:me-8
+                           hover:text-my-secondary dark:hover:text-my-accent">
+        Kontakti
+      </a>
+      <button class="block sm:inline-block
+                       my-4 sm:my-0
+                       me-4 lg:me-8
+                       hover:brightness-90
+                       dark:hover:text-my-accent" onClick="toggleDarkMode()">
+        <img class="w-16 lg:w-20" src="figma/light_mode_button.svg" alt="Tumšā un gaišā režīma poga"
+          id="light-dark-mode-icon" />
       </button>
     </div>
   </nav>
-  <div class="relative z-10 h-[40vh] w-auto bg-placeholder bg-cover text-center">
-    <h1 class="pt-32 2xl:pt-36 text-7xl 2xl:text-9xl text-white">Baudi skatus no sabiedriskā</h1>
-  </div>
-  <div class="flex flex-nowrap rounded-tl-[250px] rounded-br-[250px] mx-auto w-[88%] relative z-20 -mt-10 2xl:-mt-32 bg-my-green-prim dark:bg-my-dark-prim">
-    <p class="text-xl 2xl:text-3xl text-white ps-20 pe-10 py-32 w-full w-[65%]">Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit. Cras ut rutrum massa. Cras finibus viverra ultricies. Nulla vel hendrerit nibh. Phasellus ut elit sit amet
-      tellus tincidunt blandit vitae id elit. Sed congue porttitor purus et facilisis. Suspendisse eu risus turpis.
-      Etiam maximus a est eu dapibus. Nulla et auctor massa. Curabitur vel semper quam, sit amet consectetur magna.</p>
-    <img class="rounded-br-[250px] p-10 w-[40%] h-[40%]" src="ImagePlaceholder.png"
-      alt="ImagePlaceholder" />
+
+  <div class="relative z-10 w-full text-center h-full">
+    <div class="absolute z-20 h-full w-full bg-my-accent/50 dark:brightness-50"></div>
+    <img class="absolute z-10 h-full w-1/2 object-cover object-center" src="lokacijas/majas_ver.png" alt="Pelēka daudzstāvu māja"/>
+    <img class="absolute z-10 h-full right-0 w-1/2 object-cover object-center" src="lokacijas/lu_ver.png" alt="Latvijas universitāte, Raiņa bulvāris 19"/>
+    <div class="mx-auto bg-my-primary dark:bg-my-dark-prim relative z-20
+                w-[88%] 2xl:w-[75%]
+                h-24 md:h-32 lg:h-40 xl:h-44
+                rounded-br-[70px] md:rounded-br-[110px] xl:rounded-br-[150px]">
+    </div>
+    <h1 class="relative z-20 font-[700] uppercase text-white w-3/4 mx-auto pt-[24vh]
+               text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl">
+      Apskati to, ko es redzu, kad dodos uz Latvijas Universitāti
+    </h1>
   </div>
 
-  <div class="rounded-tr-[150px] rounded-bl-[150px] flex flex-nowrap ml-[6%] md:h-70 w-[60%] relative z-20 mt-36 bg-my-green-prim dark:bg-my-dark-prim">
-    <img class="rounded-bl-[150px] p-5 w-[30%]" src="ImagePlaceholder.png"
-      alt="ImagePlaceholder" />
-    <p class="text-sm 2xl:text-xl text-white p-5 py-16 w-[65%]">Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit. Cras ut rutrum massa. Cras finibus viverra ultricies. Nulla vel hendrerit nibh. Phasellus ut elit sit amet
-      tellus tincidunt blandit vitae id elit. Sed congue porttitor purus et facilisis. Suspendisse eu risus turpis.
-      Etiam maximus a est eu dapibus. Nulla et auctor massa. Curabitur vel semper quam, sit amet consectetur magna.</p>
+  <div class="grid justify-items-center mx-auto relative z-20
+              text-end
+              w-[88%] 2xl:w-[75%]
+              md:flex md:flex-nowrap
+              bg-my-primary dark:bg-my-dark-prim
+              -mt-10 md:-mt-12 xl:-mt-16
+              rounded-tl-[70px] rounded-br-[70px]
+              md:rounded-tl-[110px] md:rounded-br-[110px]
+              xl:rounded-tl-[150px] xl:rounded-br-[150px]">
+    <p class="md:my-auto
+              text-lg xl:text-2xl 2xl:text-3xl
+              pt-10 md:py-12 xl:py-16
+              px-6 md:pe-3 md:ps-12 xl:ps-16
+              md:w-1/2 xl:w-[40%]">
+      Šajā mājaslapā tev būs tā vienreizējā iespēja uzzināt par dažādiem apskates objektiem,
+      ar ko es sastopos ikdienā,
+      kad dodos no savas mājas līdz Latvijas Universitātei ar 15. trolejbusu un 7. tramvaju.
+      <br>
+      <br>
+      Attēlā redzama mana māja. Tā atrodas Ķengaragā, bet neteikšu, kur! Katru dienu,
+      izņemot brīvdienas,
+      es dodos tieši no šīs ēkas ārā uz universitāti.
+    </p>
+    <img class="text-white object-cover object-center
+                rounded-br-[70px] md:rounded-br-[110px] xl:rounded-br-[150px]
+                p-6 md:ps-3 md:pe-12 xl:pe-16 md:py-12 xl:py-16
+                xl:h-[65vh] 2xl:h-[56vh]
+                md:w-1/2 xl:w-[60%]" src="lokacijas/majas_hor.png" alt="Pelēka daudzstāvu māja" />
   </div>
 
-  <div class="rounded-tr-[150px] rounded-bl-[150px] flex flex-nowrap ml-[6%] md:h-70 w-[60%] relative z-20 mt-16 bg-my-green-prim dark:bg-my-dark-prim">
-    <img class="rounded-bl-[150px] p-5 w-[30%]" src="ImagePlaceholder.png"
-      alt="ImagePlaceholder" />
-    <p class="text-sm 2xl:text-xl text-white p-5 py-16 w-[65%]">Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit. Cras ut rutrum massa. Cras finibus viverra ultricies. Nulla vel hendrerit nibh. Phasellus ut elit sit amet
-      tellus tincidunt blandit vitae id elit. Sed congue porttitor purus et facilisis. Suspendisse eu risus turpis.
-      Etiam maximus a est eu dapibus. Nulla et auctor massa. Curabitur vel semper quam, sit amet consectetur magna.</p>
+  <div class="grid justify-items-center mx-auto relative z-20
+              w-[88%] 2xl:w-[75%]
+              md:flex md:flex-nowrap
+              bg-my-primary dark:bg-my-dark-prim
+              mt-32
+              rounded-tr-[70px] rounded-bl-[70px]
+              md:rounded-tr-[110px] md:rounded-bl-[110px]
+              xl:rounded-tr-[150px] xl:rounded-bl-[150px]">
+    <img class="text-white mx-auto object-cover object-center
+                rounded-tr-[70px] md:rounded-tr-none md:rounded-bl-[110px] xl:rounded-bl-[150px]
+                p-6 md:pe-3 md:ps-12 xl:ps-16 md:py-12 xl:py-16
+                xl:h-[65vh] 2xl:h-[56vh]
+                md:w-1/2 xl:w-[60%]" src="lokacijas/15_trolejbuss_hor.png" alt="15. trolejbuss" />
+    <div class="md:my-auto grid
+                text-lg xl:text-2xl 2xl:text-3xl
+                pb-6 md:py-12 xl:py-16
+                px-6 md:ps-3 md:pe-12 xl:pe-16
+                md:w-1/2 xl:w-[40%]">
+      <p class="mb-6 md:mb-12 xl:mb-16">
+        15. ir viens no aktīvākajiem trolejbusiem, kas kursē no Ķengaraga tālākā gala līdz Latvijas Universitātei.
+        Tas ir tik aktīvs, ka darba dienās, astoņos no rīta, tas kursē reizi 3 minūtēs!
+        <br><br>
+        Uzzini vairāk par apskates objektiem, kas redzami no 15. trolejbusa loga!
+      </p>
+      <a class="mx-auto
+                rounded-tl-[15px] rounded-br-[15px]
+                lg:rounded-tl-[20px] lg:rounded-br-[20px]
+                xl:rounded-tl-[30px] xl:rounded-br-[30px]
+                lg:text-xl xl:text-2xl
+                p-3 lg:p-4 xl:p-5
+                hover:brightness-90
+                bg-my-secondary dark:bg-my-accent text-my-accent dark:text-my-dark-prim" href="trolejbus_page.html" >
+        Uzzini vairāk
+      </a>
+    </div>
   </div>
 
-  <footer class="relative z-20 bg-my-green-prim dark:bg-my-dark-prim mt-52">
+  <div class="grid justify-items-center mx-auto relative z-20
+              w-[88%] 2xl:w-[75%]
+              md:flex md:flex-nowrap
+              bg-my-primary dark:bg-my-dark-prim
+              mt-32
+              rounded-tr-[70px] rounded-bl-[70px]
+              md:rounded-tr-[110px] md:rounded-bl-[110px]
+              xl:rounded-tr-[150px] xl:rounded-bl-[150px]">
+    <img class="text-white mx-auto object-cover object-center
+                rounded-tr-[70px] md:rounded-tr-none md:rounded-bl-[110px] xl:rounded-bl-[150px]
+                p-6 md:pe-3 md:ps-12 xl:ps-16 md:py-12 xl:py-16
+                xl:h-[65vh] 2xl:h-[56vh]
+                md:w-1/2 xl:w-[60%]" src="lokacijas/7_tramvajs_hor.png" alt="7. tramvajs" />
+    <div class="md:my-auto grid
+                text-lg xl:text-2xl 2xl:text-3xl
+                pb-6 md:py-12 xl:py-16
+                px-6 md:ps-3 md:pe-12 xl:pe-16
+                md:w-1/2 xl:w-[40%]">
+      <p class="mb-6 md:mb-12 xl:mb-16">
+        Otrs populārākais tramvajs Rīgā! 7. tramvajs ir iecienīta vieta,
+        kur var satikt visdažādākos cilvēkus. Tas ir arī bieži kursējošs sabiedriskais transports,
+        kā arī daudz precīzāks ar ierašanās laikiem, ja neskaita reizes, kad tas
+        nobrūk!
+        <br><br>
+        Uzzini vairāk par apskates objektiem, kas redzami, kad dodies braucienā ar 7. tramvaju!
+      </p>
+      <a class="mx-auto
+                rounded-tl-[15px] rounded-br-[15px]
+                lg:rounded-tl-[20px] lg:rounded-br-[20px]
+                xl:rounded-tl-[30px] xl:rounded-br-[30px]
+                lg:text-xl xl:text-2xl
+                p-3 lg:p-4 xl:p-5
+                hover:brightness-90
+                bg-my-secondary dark:bg-my-accent text-my-accent dark:text-my-dark-prim" href="tramvaja_page.html" >
+        Uzzini vairāk
+      </a>
+    </div>
+  </div>
+
+  <footer class="relative z-20 bg-my-primary dark:bg-my-dark-prim mt-52">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
       <div class="md:flex md:justify-between">
-        <div class="mb-6 md:mb-0">
-          <object class="fill-current w-[200px] hero-image" data="lightmode_icon.svg" type="image/svg+xml"></object>
-        </div>
+        <a href="index.html" class="flex flex-nowrap items-center
+                          mb-6 md:mb-0
+                          hover:brightness-90 dark:hover:text-my-accent">
+          <img class="hero-image
+                      h-10 sm:h-14 md:h-16 lg:h-20" src="logos/light_logo2.svg" alt="Wiew-ride logo"
+            title="Wiew-ride logo" />
+          <h1 class="italic 
+                     text-xl sm:text-2xl md:text-3xl lg:text-4xl
+                     ms-2 md:ms-3 lg:ms-4">Wiew-ride</h1>
+        </a>
         <div class="grid grid-cols-2 gap-8 sm:gap-6">
           <div>
-            <h2 class="mb-6 text-md font-semibold uppercase text-white">Resources</h2>
+            <h2 class="mb-3 mb:mb-4 text-md font-semibold uppercase text-white">Resursi</h2>
             <ul class="text-white font-medium">
-              <li class="mb-4">
-                <a href="#" class="hover:underline">Contacts</a>
+              <li class="mb-1 mb:mb-2">
+                <a href="#" class="uppercase font-[300] hover:underline hover:brightness-90 dark:hover:text-my-accent">Kontakti</a>
               </li>
               <li>
-                <a href="#" class="hover:underline">About me</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 class="mb-6 text-md font-semibold uppercase text-white">Legal</h2>
-            <ul class="text-white font-medium">
-              <li class="mb-4">
-                <a href="#" class="hover:underline">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                <a href="#" class="uppercase font-[300] hover:underline hover:brightness-90 dark:hover:text-my-accent">Par mani</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <hr class="my-6 border-gray-400 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-xs text-gray-500 sm:text-center">2024 Einārs Kaminskis, ek21136. All Rights Reserved.</span>
-        <div class="flex mt-4 sm:justify-center sm:mt-0">
-          <a href="#" class="text-white hover:text-my-brown dark:hover:text-my-green-prim">
+      <hr class="my-6 border-white sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="text-center sm:flex sm:items-center sm:justify-between">
+        <span class="text-xs xl:text-base font-[200] text-gray-300">© 2024 Einārs Kaminskis, ek21136. Visas tiesības aizsargātas.</span>
+        <div class="md:text-lg xl:text-2xl flex mt-4 justify-center sm:mt-0">
+          <a href="https://www.facebook.com/" target="_blank"
+            class="hover:brightness-90 dark:hover:text-my-accent">
             <i class="fa-brands fa-facebook"></i>
             <span class="sr-only">Facebook page</span>
           </a>
-          <a href="#" class="text-white hover:text-my-brown dark:hover:text-my-green-prim ms-5">
+          <a href="https://discord.com/" target="_blank"
+            class="hover:brightness-90 dark:hover:text-my-accent ms-5">
             <i class="fa-brands fa-discord"></i>
             <span class="sr-only">Discord community</span>
           </a>
-          <a href="#" class="text-white hover:text-my-brown dark:hover:text-my-green-prim ms-5">
+          <a href="https://x.com/" target="_blank"
+            class="hover:brightness-90 dark:hover:text-my-accent ms-5">
             <i class="fa-brands fa-x-twitter"></i>
             <span class="sr-only">Twitter page</span>
           </a>
-          <a href="#" class="text-white hover:text-my-brown dark:hover:text-my-green-prim ms-5">
+          <a href="https://github.com/" target="_blank"
+            class="hover:brightness-90 dark:hover:text-my-accent ms-5">
             <i class="fa-brands fa-github"></i>
             <span class="sr-only">GitHub account</span>
           </a>
@@ -174,5 +270,4 @@
     </div>
   </footer>
 </body>
-
 </html>

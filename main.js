@@ -33,22 +33,32 @@ function toggleDarkMode() {
   document.documentElement.classList.toggle("dark")
   var x = document.getElementById('light-dark-mode-icon')
   var y = document.getElementsByClassName('hero-image')
-  var z = document.getElementsByClassName("background-leaf")
-  if (x.src.indexOf("dark_mode_button.png") != -1) {
-    x.src = "light_mode_button.png"
-    for (i = 0; i < y.length; i++) {
-      y[i].data = "lightmode_icon.svg"
+  if (x != null) {
+    if (x.src.indexOf("figma/dark_mode_button.svg") != -1) {
+      x.src = "figma/light_mode_button.svg"
+    } else {
+      x.src = "figma/dark_mode_button.svg"
     }
-    for (i = 0; i < z.length; i++) {
-      z[i].data = "background_leaf_brown.svg"
-    }
-  } else {
-    x.src = "dark_mode_button.png"
-    for (i = 0; i < y.length; i++) {
-      y[i].data = "darkmode_icon.svg"
-    }
-    for (i = 0; i < z.length; i++) {
-      z[i].data = "background_leaf_green.svg"
+  }
+  if (y != null && y.length > 0) {
+    if (y[0].src.indexOf("logos/dark_logo2.svg") != -1) {
+      for (i = 0; i < y.length; i++) {
+        y[i].src = "logos/light_logo2.svg"
+      }
+    } else {
+      for (i = 0; i < y.length; i++) {
+        y[i].src = "logos/dark_logo2.svg"
+      }
     }
   }
 }
+
+document.addEventListener('scroll', function() {
+  var scrollPosition = window.scrollY;
+  var speedFactor = 0.005;
+  
+  var movingElement = document.getElementById('leaf-background');
+  var newPos = scrollPosition * speedFactor;
+  
+  movingElement.style.top = (newPos) + '%';
+});
